@@ -138,4 +138,17 @@
         app:layout_constraintTop_toBottomOf="@+id/button8_org"
         app:layout_constraintVertical_bias="0.028" />
 
+    <Button
+        android:id="@+id/button_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ex"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9_org"
+        app:layout_constraintVertical_bias="0.028"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

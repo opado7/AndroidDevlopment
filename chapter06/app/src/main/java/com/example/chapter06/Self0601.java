@@ -13,9 +13,7 @@ import android.widget.TimePicker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.sql.Time;
-
-public class Self0601_org extends AppCompatActivity {
+public class Self0601 extends AppCompatActivity {
 
     Chronometer chrono;
     RadioButton rdoCal, rdoTime;
@@ -32,6 +30,7 @@ public class Self0601_org extends AppCompatActivity {
         setTitle("시간 예약");
 
         chrono = (Chronometer) findViewById(R.id.chronometer1);
+        startbutton = (Button) findViewById(R.id.startbutton);
 
         rdoCal = (RadioButton) findViewById(R.id.rdoCal);
         rdoTime = (RadioButton) findViewById(R.id.rdoTime);
@@ -54,6 +53,16 @@ public class Self0601_org extends AppCompatActivity {
             public void onClick(View v) {
                 tPicker.setVisibility(View.INVISIBLE);
                 dPicker.setVisibility(View.VISIBLE);
+            }
+        });
+
+        startbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                chrono.setTextColor(Color.RED);
+                chrono.setBase(SystemClock.elapsedRealtime());
+                chrono.start();
+                rdoCal.setVisibility(View.VISIBLE);
+                rdoTime.setVisibility(View.VISIBLE);
             }
         });
 
