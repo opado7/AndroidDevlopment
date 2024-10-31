@@ -23,6 +23,8 @@
         <activity android:name=".Exer0408" android:exported="true"/>
         <activity android:name=".Exer0409" android:exported="true"/>
         <activity android:name=".Self0402_org" android:exported="true"/>
+        <activity android:name=".exercise_08" android:exported="true"/>
+        <activity android:name=".exercise_09" android:exported="true"/>
         <activity android:name=".Self0403_org" android:exported="true"/>
         <activity android:name=".Self0404_org" android:exported="true"/>
         <activity android:name=".Exer0407_org" android:exported="true"/>

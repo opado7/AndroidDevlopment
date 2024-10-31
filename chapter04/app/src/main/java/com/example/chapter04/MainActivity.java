@@ -16,13 +16,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        setTitle("chapter 04");
 
         Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +62,26 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     });
+
+    Button button5 = (Button) findViewById(R.id.button5);
+    button5.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, exercise_08.class);
+
+                    startActivity(intent);
+        }
+    });
+
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, exercise_09.class);
+
+                startActivity(intent);
+            }
+        });
 
     }
 }
