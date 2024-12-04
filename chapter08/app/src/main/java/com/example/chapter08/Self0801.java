@@ -88,9 +88,7 @@ public class Self0801 extends AppCompatActivity {
                 edtDiary.setHint("일기 없음");
             }
         });
-
     }
-
 
     String readDiary(String fName) {
         String diaryStr = null;
